@@ -1,14 +1,6 @@
 [
   
     {
-      "title"    : "Welcome to Jekyll!",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/blog/welcome-to-jekyll",
-      "date"     : "2025-10-21 20:46:42 -0500"
-    } ,
-  
-    {
       "title"    : "The Hello World of Blogs",
       "category" : "",
       "tags"     : "Technology, Blogging",
