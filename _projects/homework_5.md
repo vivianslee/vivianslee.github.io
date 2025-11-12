@@ -1,0 +1,57 @@
+---
+name: Homework 5 Visualizations
+tools: [Python, HTML, vega-lite]
+image: assets/pngs/cars.png
+description: Vizualizations for Homework 5
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
+---
+
+
+# Example including vega-lite
+
+Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
+
+We can use a vegachart HTML tag like so:
+
+```
+<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
+```
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
+
+In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
+
+
+## Search The Data & Methods
+
+Below is where we can put some links to both the data and the analysis code as buttons:
+
+```
+<div class="left">
+{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
+</div>
+```
+
+<!-- these are written in a combo of html and liquid --> 
+
+# Visualization 1: Interactive Bigfoot Map
+This visualization presents an interactive map of Bigfoot sightings across the United States, combining geographic and categorical data to reval spatial patterns in reported encounters. The underlying U.S. map, rendered in light gray, provides a clear geographic reference for the plotted sightings, which are represented as semi-transparent circles placed according to each report's latitude and longitude. The color encoding corresponds to the classification variable between the different sightings, Class A,B,C. Before visualization, the dataset was cleaned by removing rows missing latitude, longitude, or classification data to ensure accurate placement and consistent representation. To enhance user engagement and insight, a legend based interactive selection was added, allowing viewers to toggle and filter sightings by encounter type. This interactivity enables exploration of regional and categorical trends while keeping the visualization clear, accessible, and informative.
+
+# Visualization 2: Bigfoot Sighting Per Year
+This visualization shows the number of reported Bigfoot sightings in the United States over time, grouped by year. The purpose of this chart is to highlight temporal trends in sightings, helping viewers identify any increases or declines in reports across different decades. I used a bar chart because it effectively displays discrete amounts per year, making it easy to compare over time. The x axis represents the year as an ordinal variable, while the y axis represents the count of sightings as a quantitative variable. Each bar's height represents the total number of sightings for that specific year. The data was transformed by converting the original date column into a data time format and then extracting the year component using df['date'].dt.year. I grouped the data by year and counted the number of reports to create a summarized dataset suitable for visualization. I chose a basic blue color to keep it clean and keep the focus on the trend rather than the visual elements. This straightforward design allows the viewer to easily observe fluctuation in reported Bigfoot activity over time.
+
+<div class="left">
+{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://github.com/vivianslee/vivianslee.github.io/blob/main/python_notebooks/Jekyll.ipynb" text="The Analysis" %}
+</div>
