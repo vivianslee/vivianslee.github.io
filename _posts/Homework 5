@@ -1,0 +1,28 @@
+---
+title: Homework 5 Visualizations
+style: fill
+color: secondary
+description: This includes my 2 visulizations for homework 5.
+---
+
+Source: [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU)
+
+This is me writing an intro to this blog post.  So introlicioius.
+
+## 1. Visualization 1: Interactive Bigfoot Map
+
+This visualization presents an interactive map of Bigfoot sightings across the United States, combining geographic and categorical data to reval spatial patterns in reported encounters. The underlying U.S. map, rendered in light gray, provides a clear geographic reference for the plotted sightings, which are represented as semi-transparent circles placed according to each report's latitude and longitude. The color encoding corresponds to the classification variable between the different sightings, Class A,B,C. Before visualization, the dataset was cleaned by removing rows missing latitude, longitude, or classification data to ensure accurate placement and consistent representation. To enhance user engagement and insight, a legend based interactive selection was added, allowing viewers to toggle and filter sightings by encounter type. This interactivity enables exploration of regional and categorical trends while keeping the visualization clear, accessible, and informative.
+
+## 2. Visualization 2: Bigfoot Sighting Per Year
+
+This visualization shows the number of reported Bigfoot sightings in the United States over time, grouped by year. The purpose of this chart is to highlight temporal trends in sightings, helping viewers identify any increases or declines in reports across different decades. I used a bar chart because it effectively displays discrete amounts per year, making it easy to compare over time. The x axis represents the year as an ordinal variable, while the y axis represents the count of sightings as a quantitative variable. Each bar's height represents the total number of sightings for that specific year. The data was transformed by converting the original date column into a data time format and then extracting the year component using df['date'].dt.year. I grouped the data by year and counted the number of reports to create a summarized dataset suitable for visualization. I chose a basic blue color to keep it clean and keep the focus on the trend rather than the visual elements. This straightforward design allows the viewer to easily observe fluctuation in reported Bigfoot activity over time.
+
+![corg](https://media.istockphoto.com/photos/welsh-corgi-picture-id962032196?k=20&m=962032196&s=170667a&w=0&h=NhIyQdJgVw0cw_EeLtP3LcLExLuiAWPwzL6_WsRKUfQ=)
+
+## 3. Data Set
+
+This is my final thing, probably would be great if this was a TL;DR or summary.  But I don't have that for you.  I have given you so little already, why start saying anything useful now?
+
+Besides, all anybody wants is the DERP:
+
+![MAXIMUM DERP](http://3.bp.blogspot.com/-AXnXOPZgqMk/Un-xCBAa4gI/AAAAAAAAsWA/z_lZsvDoCRk/s1600/derpstages.jpg)
