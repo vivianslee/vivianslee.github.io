@@ -10,33 +10,6 @@ custom_js:
   - justcharts
 ---
 
-
-# Bigfoot Visualizations for Homework 5
-
-Click here for the Dataset: [Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)
-
-Click here for Visualizations: [Visualization](https://github.com/vivianslee/vivianslee.github.io/blob/main/python_notebooks/Jekyll.ipynb)
-
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
-
-
-## Search The Data & Methods
-
-Below is where we can put some links to both the data and the analysis code as buttons:
-
-```
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
-
-<div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
-```
-
 <!-- these are written in a combo of html and liquid --> 
 
 # Visualization 1: Interactive Bigfoot Map
@@ -50,5 +23,5 @@ This visualization shows the number of reported Bigfoot sightings in the United 
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/vivianslee/vivianslee.github.io/blob/main/python_notebooks/Jekyll.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/vivianslee/vivianslee.github.io/blob/main/python_notebooks/Jekyll.ipynb" text="Visualizations" %}
 </div>
