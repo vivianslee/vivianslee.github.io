@@ -13,7 +13,7 @@ custom_js:
 
 # Bigfoot Visualizations for Homework 5
 
-Click here for the Dataset: [Dataset]([https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv))
+Click here for the Dataset: [Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)
 
 Click here for Visualizations: [Visualization](https://github.com/vivianslee/vivianslee.github.io/blob/main/python_notebooks/Jekyll.ipynb)
 
